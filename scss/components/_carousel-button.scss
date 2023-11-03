@@ -1,0 +1,50 @@
+/* CAROUSEL */
+
+.carousel-button {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--color-text);
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-text);
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: var(--color-text);
+    fill: white;
+  }
+}
+
+.next {
+  transform: rotate(180deg);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+
+  &__button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    background-color: var(--color-footer);
+    border-radius: 50%;
+
+    &--active {
+      background-color: var(--color-radio);
+    }
+  }
+}

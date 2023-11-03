@@ -1,0 +1,42 @@
+/*Traditions-section*/
+
+.traditions-section {
+  padding-top: 40px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 96px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  &__content {
+    max-width: 650px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__text-2 {
+    max-width: 335px;
+  }
+
+  &__baker-men-img {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      border-radius: 400px 400px 0px 0px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.input {
+  &__form-label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+
+    &:focus {
+      border-color: var(--color-brand);
+      color: var(--color-text);
+    }
+  }
+
+  &__form-input {
+    padding: 8px 24px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.7;
+    border: 1px solid var(--color-footer);
+    border-radius: 8px;
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 42px;
+      margin-bottom: 32px;
+    }
+
+    &:focus {
+      border-color: var(--color-brand-dark);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-footer);
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-text);
+    }
+  }
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+
+  &__link {
+    color: var(--color-text);
+    text-underline-offset: 2px;
+  }
+}
+
+.modal-bread-img {
+  position: absolute;
+  right: 0;
+}
